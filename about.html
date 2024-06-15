@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Riddhi Arora</title>
+    <link rel="stylesheet" href="css/aboutstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" id="night-mode-toggle">Night Mode</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+                <div class="profile-image">
+                    <img src="./images/tushar image .jpg" alt="Riddhi Arora's Photo">
+                </div>
+                <div class="profile-content">
+                    <h1>Hi! I'm Tushar Nama</h1>
+                    <h2>First-year Computer Science and Engineering student</h2>
+                    <p>Hello! My name is Riddhi Arora, and I'm a first-year Computer Science and Engineering student at the Indian Institute of Information Technology, Kota. I am passionate about web development, particularly front-end development.</p>
+                    <p>I enjoy creating visually appealing and user-friendly websites. My skills include HTML, CSS, JavaScript, and I am continuously learning new technologies to enhance my expertise. I am excited to combine my academic knowledge with practical experience to build innovative web solutions.</p>
+                    <p>Besides coding, I love exploring new technologies, participating in hackathons, and contributing to open-source projects. In my free time, I enjoy reading tech blogs, experimenting with new design trends, and improving my problem-solving skills.</p>
+                    <a href="projects.html" class="btn">See My Work</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Riddhi Arora. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const nightModeToggle = document.getElementById('night-mode-toggle');
+        nightModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('night-mode');
+            document.querySelector('header').classList.toggle('night-mode');
+            document.querySelector('footer').classList.toggle('night-mode');
+        });
+    </script>
+</body>
+</html>
